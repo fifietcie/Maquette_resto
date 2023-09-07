@@ -1,6 +1,23 @@
+@font-face {
+  font-family: "playfairDR";
+  /* creation d'un alias/raccourci  */
+  src: url(../font/PlayfairDisplay-Regular.ttf);
+}
+/* importation des fonts  */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "playfairDR", serif;
+}
+/* Reset dimensions */
+
 /* Pour appeler l'id logo, j'utilise le sélécteur # = le nom logo  */
 #logo {
-  color: rgb(255, 0, 0);
+  color: black;
+  padding: 1rem;
+  letter-spacing: 0.3rem;
+  font-weight: 360;
 }
 /* Pour appeler un élément HTML dans un selecteur j'utilise son nom  */
 nav {
@@ -8,6 +25,15 @@ nav {
   /* Pour gerer l'allignement vertical des enfants de ma div j'utilise align-items  */
   align-items: center;
   justify-content: space-between;
+  box-shadow: 0px 9px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 9px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 9px 5px 0px rgba(0,0,0,0.75);
+  position: fixed;
+  /* le fixed permet de garder la barre de nav fix quand on scroll */
+z-index: ; 
+width: 100%;
+/* permet de superposer les layers mais ne fonctionne pas avec une position statique (par defaut) */
+
 }
 
 ul {
@@ -26,4 +52,8 @@ li {
   background-size: cover;
   display: flex;
   align-items: flex-end;
+}
+
+h1 {
+  padding: 1rem;
 }
