@@ -4,7 +4,7 @@
   src: url(../font/PlayfairDisplay-Regular.ttf);
 }
 /* importation des fonts  */
-img{
+img, input{
   width: 100%;
 }
 * {
@@ -131,5 +131,20 @@ h1 {
   padding: 1rem 0;
   font-size: 1rem;
 }
-/* a venir fignoler */
+/* à fignoler */
 
+#contact{
+  width: 70%;
+  margin : auto;
+}
+
+#contact input{
+  border: none;
+  border-bottom: 0.5px solid black;
+  padding: .5rem;
+  margin: .5rem ;
+}
+#contact .send{
+  width: fit-content;
+  border: none;
+}
